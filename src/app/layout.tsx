@@ -16,6 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    // Stars Background 
     <html lang="en">
       <body className={inter.className}>
         <StarsCanvas />
