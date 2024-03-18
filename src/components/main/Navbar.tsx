@@ -2,7 +2,7 @@
 import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { IoMdMenu } from "react-icons/io";
 import { IoCart } from "react-icons/io5";
 import { IoCloseSharp } from "react-icons/io5";
@@ -24,8 +24,8 @@ const Navbar = (props: Props) => {
   console.log("state", isSidebarOpen);
 
   return (
-    <main>
-      <nav className="flex justify-around items-center px-8 py-6">
+    <main className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 ">
+      <nav className="flex justify-around items-center px-8 py-3">
         <section className="flex items-center gap-4">
           {/* MENU */}
           <IoMdMenu

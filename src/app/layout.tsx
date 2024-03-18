@@ -17,11 +17,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    // Stars Background 
+    // Stars Background
     <html lang="en">
-      <body className={inter.className}>
-        {/* <StarsCanvas /> */}
-        <Navbar/>
+      <body
+        className={`${inter.className} overflow-y-scroll overflow-x-hidden`}
+      >
+        <Navbar />
+        <StarsCanvas />
+
         {children}
       </body>
     </html>
