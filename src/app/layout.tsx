@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import StarsCanvas from "@/components/main/StarsBackground";
 import Navbar from "@/components/main/Navbar";
+import SmoothScrolling from "@/components/utils/SmoothScrolling";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,9 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     // Stars Background
-    <html lang="en">
+    <html lang="en" className="dark">
       <body
-        className={`${inter.className} overflow-y-scroll overflow-x-hidden`}
+        className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden`}
       >
         <Navbar />
         <StarsCanvas />
